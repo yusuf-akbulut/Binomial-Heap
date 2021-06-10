@@ -141,8 +141,7 @@ node *BH_FindMax(node *hdr){
 	return maxNode;
 }
 
-/*This function inverts the children of deleted maximum node.This funtion is not necessary but it exits in this 
-progrom for convenience.*/
+//This function inverts the children of deleted maximum node.
 node* BH_Invert(node* hdr) {
 	if (hdr->sibling != NULL) {
        BH_Invert(hdr->sibling);
